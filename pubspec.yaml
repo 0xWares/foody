@@ -65,6 +65,15 @@ flutter:
     - images/profile_image.png
     - images/bag.png
     - images/card_item.png
+    - images/brand_image.png
+    - images/logo_juk.png
+    - images/friends.png
+    - images/banner1.png
+    - images/banner2.png
+    - images/dish.png
+    - images/food.png
+    - images/order.png
+    - images/logo_dark.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
