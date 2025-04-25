@@ -1004,6 +1004,138 @@ class _FoodyHomeState extends State<FoodyHome> {
                       ),
                     ),
                   ),
+                  SizedBox(height: 20),
+                  SizedBox(
+                    width: size.width * 0.7,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Legal Pages",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            fontWeight: FontWeight.bold,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Terms & Conditions",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Privacy Policy",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Cookies",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Modern slavery statement",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 40),
+                  SizedBox(
+                    width: size.width * 0.7,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Important Links",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            fontWeight: FontWeight.bold,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Get help",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Add your restaurant",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Signup to delivery",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 20),
+                        Text(
+                          "Create a business account",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: "Poppins",
+                            decoration: TextDecoration.underline,
+                            color: const Color(0xFF03081F),
+                          ),
+                        ),
+                        SizedBox(height: 30),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: double.infinity,
+                    height: 70,
+                    decoration: BoxDecoration(color: const Color(0xFF03081F)),
+                    child: Center(
+                      child: Text(
+                        "Order.uk Copyright 2024, All Rights Reserved.",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: "Poppins",
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
