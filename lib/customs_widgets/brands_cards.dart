@@ -36,7 +36,7 @@ class BrandsCards extends StatelessWidget {
                       },
                       blendMode: BlendMode.darken,
                       child: Image(
-                        image: AssetImage('images/brand_image.png'),
+                        image: AssetImage('assets/images/home/brand_image.png'),
                         width: double.infinity,
                         height: double.infinity,
                         fit: BoxFit.cover,

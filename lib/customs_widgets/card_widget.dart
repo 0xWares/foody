@@ -27,7 +27,7 @@ class CardWidget extends StatelessWidget {
                 },
                 blendMode: BlendMode.darken,
                 child: Image(
-                  image: AssetImage('images/card_item.png'),
+                  image: AssetImage('assets/images/home/card_item.png'),
                   width: double.infinity,
                   height: double.infinity,
                   fit: BoxFit.cover,

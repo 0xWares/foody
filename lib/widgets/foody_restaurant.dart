@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:foody/customs_widgets/brands_cards.dart';
 import 'package:foody/customs_widgets/card_widget.dart';
 import 'package:foody/customs_widgets/grid_card_widget.dart';
-import 'package:foody/widgets/foody_restaurant.dart';
 
-class FoodyHome extends StatefulWidget {
-  const FoodyHome({super.key});
+class FoodyRestaurant extends StatefulWidget {
+  const FoodyRestaurant({super.key});
 
   @override
-  State<FoodyHome> createState() => _FoodyHomeState();
+  State<FoodyRestaurant> createState() => _FoodyRestaurantState();
 }
 
-class _FoodyHomeState extends State<FoodyHome> {
+class _FoodyRestaurantState extends State<FoodyRestaurant> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.sizeOf(context);
@@ -36,15 +35,13 @@ class _FoodyHomeState extends State<FoodyHome> {
                     onTap: () {},
                     child: Container(
                       height: 70,
-                      color: const Color.fromARGB(179, 228, 224, 224),
+                      color: Color(0xFFFC8A06),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           ClipRRect(
-                            borderRadius: BorderRadius.circular(
-                              50,
-                            ), // Adjust radius for roundness
+                            borderRadius: BorderRadius.circular(50),
                             child: Image(
                               image: AssetImage(
                                 "assets/images/home/profile_image.png",
@@ -62,18 +59,9 @@ class _FoodyHomeState extends State<FoodyHome> {
                               Text(
                                 'Aycan',
                                 style: TextStyle(
-                                  color: Colors.amber,
+                                  color: Colors.black,
                                   fontFamily: "Poppins",
                                   fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                              Text(
-                                'My Account',
-                                style: TextStyle(
-                                  color: const Color.fromARGB(255, 54, 54, 51),
-                                  fontFamily: "Poppins",
-                                  fontWeight: FontWeight.w800,
-                                  decoration: TextDecoration.underline,
                                 ),
                               ),
                             ],
@@ -85,17 +73,10 @@ class _FoodyHomeState extends State<FoodyHome> {
                 ),
                 Expanded(
                   child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => FoodyRestaurant(),
-                        ),
-                      );
-                    },
+                    onTap: () {},
                     child: Container(
                       height: 70,
-                      color: const Color(0xFF028643),
+                      color: Color(0xFF028643),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -169,113 +150,217 @@ class _FoodyHomeState extends State<FoodyHome> {
                 child: Center(
                   child: Column(
                     children: [
-                      SizedBox(height: 20),
-                      Text(
-                        "Order Restaurant food, takeaway and groceries.",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w400,
-                          fontSize: 15.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(height: 15),
-                      RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                          style: const TextStyle(
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14.0,
-                            height: 1.0,
-                            letterSpacing: 0.0,
+                      SizedBox(height: 30),
+                      Stack(
+                        clipBehavior: Clip.none,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: SizedBox(
+                              width: size.width * 0.7,
+                              child: Image(
+                                image: AssetImage(
+                                  'assets/images/restaurant/rest_woman.png',
+                                ),
+                                fit: BoxFit.cover,
+                                width: double.infinity,
+                                height: 200,
+                              ),
+                            ),
                           ),
-                          children: [
-                            TextSpan(
-                              text: "Feast Your Senses,\n",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 30,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            TextSpan(
-                              text: "Fast and Fresh",
-                              style: TextStyle(
-                                color: Colors.amber,
-                                fontSize: 30,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 15),
+                          Positioned(
+                            bottom: -25,
+                            left: -25,
 
-                      Text(
-                        "Enter a post code to see what we deliver",
-                        style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.w400,
-                          fontSize: 18.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                      SizedBox(height: 15),
-                      Padding(
-                        padding: const EdgeInsets.all(15.0),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            hintText: 'Enter your postcode',
-                            hintStyle: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.w400,
-                              fontSize: 18.0,
-                              color: Colors.black.withOpacity(0.6),
-                            ),
-                            contentPadding: EdgeInsets.fromLTRB(20, 18, 70, 18),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(50.0),
-                              borderSide: BorderSide.none,
-                            ),
-                            suffixIcon: Padding(
-                              padding: EdgeInsets.only(right: 0),
-                              child: InkWell(
-                                onTap: () {},
-                                child: Container(
-                                  width: 58,
-                                  height: 58,
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber,
-                                    shape: BoxShape.circle,
-                                  ),
-                                  child: Center(
-                                    child: Image.asset(
-                                      'assets/images/home/search_arrow.png',
-                                      height: 20,
-                                      width: 20,
-                                      filterQuality: FilterQuality.none,
-                                    ),
+                            child: Container(
+                              height: 65,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(8.0),
+                                ),
+                              ),
+                              child: Center(
+                                child: Image(
+                                  image: AssetImage(
+                                    'assets/images/restaurant/ratting.png',
                                   ),
                                 ),
                               ),
                             ),
                           ),
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 18.0,
-                            color: Colors.black,
+                        ],
+                      ),
+                      SizedBox(height: 50),
+                      Align(
+                        alignment: Alignment.centerLeft,
+
+                        child: Container(
+                          height: 50,
+                          width: size.width * 0.7,
+                          decoration: BoxDecoration(
+                            color: Colors.amber,
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(10),
+                              bottomRight: Radius.circular(10),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                image: AssetImage(
+                                  'assets/images/restaurant/clock.png',
+                                ),
+                                height: 28,
+                              ),
+                              SizedBox(width: 10),
+                              Text(
+                                "Open until 3:00 AM",
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 25.0,
+                                  color: const Color.fromARGB(
+                                    255,
+                                    255,
+                                    255,
+                                    255,
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
+                      SizedBox(height: 40),
+                      Text(
+                        "Desi Flavours with a blend of Italian aesthetics!",
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w400,
+                          fontSize: 18.0,
+                          color: const Color.fromARGB(255, 14, 13, 13),
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        "Tandoori Pizza London",
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 35.0,
+                          color: const Color.fromARGB(255, 14, 13, 13),
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color(0xFF03081F),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(40),
+                            ),
+                            padding: EdgeInsets.all(10),
+                          ),
+                          onPressed: () {},
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                image: AssetImage(
+                                  'assets/images/restaurant/list.png',
+                                ),
+                                height: 20,
+                              ),
+                              SizedBox(width: 10),
+                              Text(
+                                'Minimum Order: 12 GBP',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white,
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 15),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Color(0xFF03081F),
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(40),
+                            ),
+                            padding: EdgeInsets.all(10),
+                          ),
+                          onPressed: () {},
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                image: AssetImage(
+                                  'assets/images/restaurant/cycle.png',
+                                ),
+                                height: 20,
+                              ),
+                              SizedBox(width: 10),
+                              Text(
+                                'Delivery in 20-25 Minutes',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white,
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 30),
                     ],
                   ),
                 ),
               ),
             ),
+            SizedBox(height: 20),
+
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: TextField(
+                textAlign: TextAlign.center,
+                decoration: InputDecoration(
+                  hintText: 'Search from menu...',
+                  hintStyle: TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
+
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.grey, width: 2.0),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                  ),
+                  contentPadding: EdgeInsets.all(12.0),
+                ),
+              ),
+            ),
+
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
