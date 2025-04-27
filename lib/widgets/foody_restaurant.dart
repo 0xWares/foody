@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:foody/customs_widgets/brands_cards.dart';
 import 'package:foody/customs_widgets/card_widget.dart';
@@ -330,7 +332,7 @@ class _FoodyRestaurantState extends State<FoodyRestaurant> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
 
             Padding(
               padding: const EdgeInsets.all(20),
@@ -360,60 +362,136 @@ class _FoodyRestaurantState extends State<FoodyRestaurant> {
                 ),
               ),
             ),
+            SizedBox(height: 10),
+            Text(
+              'Order from Tandoori Pizza London',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w600,
+                fontSize: 18,
+                height: 1.0,
+                letterSpacing: 0,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: const Color.fromARGB(255, 19, 18, 18),
+                    width: 1.0,
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Image(
+                            image: AssetImage(
+                              'assets/images/restaurant/dine_icon.png',
+                            ),
+                            height: 50,
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            'Menu',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w600,
+                              fontSize: 32,
+                              height: 1.0,
+                              letterSpacing: 0,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            'Pizzas',
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          SizedBox(width: 20),
+                          Transform.rotate(
+                            angle: pi / 2,
+                            child: Image(
+                              image: AssetImage(
+                                'assets/images/home/search_arrow.png',
+                              ),
+                              height: 30,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+
+            SizedBox(height: 10),
 
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.only(left: 8.0, right: 8.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Up to -40% Discount Offers 🎊 ",
+                    'Pizzas',
+
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w800,
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 30,
+                      height: 1.0,
+                      letterSpacing: 0,
                     ),
                   ),
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(
+                      backgroundColor: Colors.white24,
+                      foregroundColor: Colors.black,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      padding: EdgeInsets.only(
-                        top: 5,
-                        bottom: 5,
-                        left: 10,
-                        right: 10,
+                        borderRadius: BorderRadius.circular(30),
+                        side: BorderSide(
+                          color: const Color.fromARGB(255, 200, 196, 196),
+                          width: 1.0,
+                        ),
                       ),
                     ),
                     onPressed: () {},
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
+                        Text(
+                          'Sort by Pricing',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: "Poppins",
+                          ),
+                        ),
+                        SizedBox(width: 10),
                         Transform.rotate(
-                          angle: 1.5,
+                          angle: pi / 2,
                           child: Image(
                             image: AssetImage(
                               'assets/images/home/search_arrow.png',
                             ),
-                            height: 18,
+                            height: 30,
                           ),
                         ),
-                        SizedBox(width: 7),
-                        Text("Pizza & Fast Food"),
                       ],
                     ),
                   ),
                 ],
-              ),
-            ),
-            SizedBox(
-              height: 280,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return CardWidget();
-                },
-                itemCount: 10,
               ),
             ),
             Padding(
