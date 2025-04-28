@@ -495,50 +495,851 @@ class _FoodyRestaurantState extends State<FoodyRestaurant> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
-                top: 10.0,
-                bottom: 10,
-                left: 0.0,
-                right: 0.0,
-              ),
+              padding: const EdgeInsets.all(8),
               child: Container(
                 width: double.infinity,
-
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(179, 228, 226, 226),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color.fromARGB(255, 210, 206, 206),
+                      spreadRadius: 1,
+                      blurRadius: 5,
+                      offset: const Offset(0, 0),
+                    ),
+                  ],
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(height: 10),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(
+                            width: 200,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  'Farm HouseXtreme Pizza',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: "Poppins",
+                                    fontSize: 20,
+                                    height: 1.2,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Row(
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
 
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(
-                        "Order.Uk’s Popular Categories",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
+                          Container(
+                            height: 90,
+                            width: 90,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  'assets/images/restaurant/pizza.png',
+                                ),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 30),
+                      Text(
+                        '1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks',
+                      ),
+                      SizedBox(height: 30),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(3)),
+                          color: Color(0xFF03081F),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "Small",
+                                style: TextStyle(
+                                  color: const Color.fromARGB(
+                                    247,
+                                    245,
+                                    241,
+                                    241,
+                                  ),
+                                  fontFamily: 'Poppins',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(3),
+                                  ),
+                                  color: Color(0xFF028643),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    '£21.90',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color.fromARGB(255, 210, 206, 206),
+                      spreadRadius: 1,
+                      blurRadius: 5,
+                      offset: const Offset(0, 0),
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(
+                            width: 200,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  'Farm HouseXtreme Pizza',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: "Poppins",
+                                    fontSize: 20,
+                                    height: 1.2,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Row(
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          Container(
+                            height: 90,
+                            width: 90,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  'assets/images/restaurant/pizza.png',
+                                ),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 30),
+                      Text(
+                        '1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks',
+                      ),
+                      SizedBox(height: 30),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(3)),
+                          color: Color(0xFF03081F),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "Small",
+                                style: TextStyle(
+                                  color: const Color.fromARGB(
+                                    247,
+                                    245,
+                                    241,
+                                    241,
+                                  ),
+                                  fontFamily: 'Poppins',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(3),
+                                  ),
+                                  color: Color(0xFF028643),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    '£21.90',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.all(8),
+              child: Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color.fromARGB(255, 210, 206, 206),
+                      spreadRadius: 1,
+                      blurRadius: 5,
+                      offset: const Offset(0, 0),
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(
+                            width: 200,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  'Farm HouseXtreme Pizza',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: "Poppins",
+                                    fontSize: 20,
+                                    height: 1.2,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Row(
+                                  children: [
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                    const SizedBox(width: 7),
+                                    Image(
+                                      image: AssetImage(
+                                        'assets/images/restaurant/chili.png',
+                                      ),
+                                      height: 20,
+                                      color: Colors.grey,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          Container(
+                            height: 90,
+                            width: 90,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage(
+                                  'assets/images/restaurant/pizza.png',
+                                ),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 30),
+                      Text(
+                        '1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks',
+                      ),
+                      SizedBox(height: 30),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(3)),
+                          color: Color(0xFF03081F),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                "Small",
+                                style: TextStyle(
+                                  color: const Color.fromARGB(
+                                    247,
+                                    245,
+                                    241,
+                                    241,
+                                  ),
+                                  fontFamily: 'Poppins',
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              SizedBox(width: 10),
+                              Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(3),
+                                  ),
+                                  color: Color(0xFF028643),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    '£21.90',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w700,
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 20),
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                height: 200,
+                child: Stack(
+                  children: [
+                    Image.asset(
+                      'assets/images/restaurant/rest_banner.png',
+                      fit: BoxFit.cover,
+                      width: double.infinity,
+                      height: double.infinity,
+                    ),
+
+                    Positioned(
+                      top: 0,
+                      left: 25,
+
+                      child: Container(
+                        height: 50,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          color: Color(0xFF03081F),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(8.0),
+                            bottomRight: Radius.circular(8.0),
+                          ),
+                        ),
+                        child: Center(
+                          child: const Text(
+                            "-20%",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                              fontFamily: "Poppins",
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                    GridView.count(
-                      crossAxisCount: 2,
-                      shrinkWrap: true,
-                      physics: NeverScrollableScrollPhysics(),
-                      childAspectRatio: 0.8,
-                      mainAxisSpacing: 10,
-                      crossAxisSpacing: 10,
-                      children: List.generate(6, (index) {
-                        return GridCardWidget();
-                      }),
+                    const Positioned(
+                      top: 84,
+                      left: 25,
+                      child: Text(
+                        'Signup as a business',
+                        style: TextStyle(
+                          color: Colors.amber,
+                          fontSize: 20,
+                          fontWeight: FontWeight.normal,
+                          fontFamily: "Poppins",
+                        ),
+                      ),
                     ),
-                    SizedBox(height: 15),
+                    Positioned(
+                      left: 29,
+                      bottom: 60,
+                      child: const Text(
+                        'Partner with us',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Poppins",
+                        ),
+                      ),
+                    ),
+
+                    Positioned(
+                      bottom: 0,
+                      right: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(40),
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Image(
+                            image: AssetImage(
+                              'assets/images/restaurant/plus.png',
+                            ),
+                            height: 40,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
+            SizedBox(height: 20),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color.fromARGB(255, 210, 206, 206),
+                    spreadRadius: 1,
+                    blurRadius: 5,
+                    offset: const Offset(0, 0),
+                  ),
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image(
+                          image: AssetImage('assets/images/restaurant/loc.png'),
+                          height: 25,
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          'Delivery information',
+                          style: TextStyle(
+                            fontSize: 32,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Poppins",
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 10),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Monday: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '12:00 AM - 3:00 AM, 8:00 AM - 3:00AM',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 20),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Tuesday: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '8:00 AM - 3:00AM',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(height: 20),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Wednesday: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '8:00 AM - 3:00AM',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(height: 20),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Thusday: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '8:00 AM - 3:00AM',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(height: 20),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Friday: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '8:00 AM - 3:00AM',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(height: 20),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Saturday: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '8:00 AM - 3:00AM',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(height: 20),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Sunday: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '8:00 AM - 3:00AM',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+
+                        SizedBox(height: 20),
+
+                        RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'Estimated time until delivery: ',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                              TextSpan(
+                                text: '20 min',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 14,
+                                  fontFamily: "Poppins",
+                                  fontWeight: FontWeight.w300,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 30),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage(
+                                'assets/images/restaurant/contact.png',
+                              ),
+                              height: 25,
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              'Contact information',
+                              style: TextStyle(
+                                fontSize: 32,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Poppins",
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
             Padding(
               padding: const EdgeInsets.only(
                 top: 10.0,
@@ -557,7 +1358,7 @@ class _FoodyRestaurantState extends State<FoodyRestaurant> {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        "Order.Uk’s Popular Brands",
+                        "Similar Restaurants",
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 20,
@@ -582,173 +1383,7 @@ class _FoodyRestaurantState extends State<FoodyRestaurant> {
               ),
             ),
 
-            Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(10),
-                child: Container(
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(179, 228, 226, 226),
-                  ),
-                  child: Column(
-                    children: [
-                      SizedBox(height: 50),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Image(
-                            image: AssetImage(
-                              'assets/images/home/logo_juk.png',
-                            ),
-                            height: 25,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 30.0),
-                            child: RichText(
-                              text: TextSpan(
-                                style: const TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 14.0,
-                                  height: 1.0,
-                                  letterSpacing: 0.0,
-                                ),
-                                children: [
-                                  TextSpan(
-                                    text: "ing  is more\n",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 30,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: "personalised",
-                                    style: TextStyle(
-                                      color: Colors.amber,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: "& instant",
-                                    style: TextStyle(
-                                      color: const Color.fromARGB(
-                                        255,
-                                        14,
-                                        13,
-                                        13,
-                                      ),
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 18),
-
-                      const Text(
-                        "Download the Order.uk app for faster ordering",
-                        style: TextStyle(fontSize: 15),
-                      ),
-
-                      SizedBox(height: 25),
-                      Image(
-                        image: AssetImage("assets/images/home/friends.png"),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
             SizedBox(height: 20),
-            SizedBox(
-              width: double.infinity,
-              height: 200,
-              child: Stack(
-                children: [
-                  // Background Image
-                  Image.asset(
-                    'assets/images/home/banner1.png',
-                    fit: BoxFit.cover,
-                    width: double.infinity,
-                    height: double.infinity,
-                  ),
-
-                  Positioned(
-                    top: 0,
-                    left: 25,
-
-                    child: Container(
-                      height: 20,
-                      width: 200,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(8.0),
-                          bottomRight: Radius.circular(8.0),
-                        ),
-                      ),
-                      child: Center(
-                        child: const Text(
-                          "Earn more with lower fees",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            fontFamily: "Poppins",
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Positioned(
-                    top: 84,
-                    left: 25,
-                    child: Text(
-                      'Signup as a business',
-                      style: TextStyle(
-                        color: Colors.amber,
-                        fontSize: 20,
-                        fontWeight: FontWeight.normal,
-                        fontFamily: "Poppins",
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 29,
-                    bottom: 60,
-                    child: const Text(
-                      'Partner with us',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Poppins",
-                      ),
-                    ),
-                  ),
-
-                  Positioned(
-                    bottom: 10,
-                    left: 25,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.amber,
-                        foregroundColor: Colors.white,
-                      ),
-                      child: const Text('Get Started'),
-                    ),
-                  ),
-                ],
-              ),
-            ),
 
             SizedBox(height: 20),
             SizedBox(
