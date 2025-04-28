@@ -1333,8 +1333,273 @@ class _FoodyRestaurantState extends State<FoodyRestaurant> {
                             ),
                           ],
                         ),
+                        SizedBox(height: 10),
+                        Text(
+                          'If you have allergies or other dietary restrictions, please contact the restaurant. The restaurant will provide food based on specific information.',
+                          style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 20,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          'Phone number',
+                          style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 25,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          '+934443-43',
+                          style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          'Website',
+                          style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 25,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Text(
+                          'https://mcdonalds.uk/',
+                          style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ],
                     ),
+                    SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Color(0xFF03081F),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color(0xFFE2E2E2),
+                              spreadRadius: 1,
+
+                              offset: Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Column(
+                          children: [
+                            SizedBox(height: 20),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image(
+                                  image: AssetImage(
+                                    'assets/images/restaurant/time.png',
+                                  ),
+                                  height: 25,
+                                ),
+                                SizedBox(width: 10),
+                                Text(
+                                  'Operation Times',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: "Poppins",
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 20),
+                            RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: 'Monday: ',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        249,
+                                        249,
+                                        249,
+                                      ),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: '8:00 AM - 3:00 AM',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        255,
+                                        255,
+                                        255,
+                                      ),
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                      fontWeight: FontWeight.w300,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            SizedBox(height: 20),
+                            RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: 'Tuesday: ',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        249,
+                                        249,
+                                        249,
+                                      ),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: '8:00 AM - 3:00 AM',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        255,
+                                        255,
+                                        255,
+                                      ),
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                      fontWeight: FontWeight.w300,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            SizedBox(height: 20),
+                            RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: 'Wednesday: ',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        249,
+                                        249,
+                                        249,
+                                      ),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: '8:00 AM - 3:00 AM',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        255,
+                                        255,
+                                        255,
+                                      ),
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                      fontWeight: FontWeight.w300,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            SizedBox(height: 20),
+                            RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: 'Thursday: ',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        249,
+                                        249,
+                                        249,
+                                      ),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: '8:00 AM - 3:00 AM',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        255,
+                                        255,
+                                        255,
+                                      ),
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                      fontWeight: FontWeight.w300,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+
+                            SizedBox(height: 20),
+                            RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: 'Friday: ',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        249,
+                                        249,
+                                        249,
+                                      ),
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: '8:00 AM - 3:00 AM',
+                                    style: TextStyle(
+                                      color: const Color.fromARGB(
+                                        255,
+                                        255,
+                                        255,
+                                        255,
+                                      ),
+                                      fontSize: 14,
+                                      fontFamily: "Poppins",
+                                      fontWeight: FontWeight.w300,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 30),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
                   ],
                 ),
               ),
@@ -1385,365 +1650,6 @@ class _FoodyRestaurantState extends State<FoodyRestaurant> {
 
             SizedBox(height: 20),
 
-            SizedBox(height: 20),
-            SizedBox(
-              width: double.infinity,
-              height: 200,
-              child: Stack(
-                children: [
-                  Image.asset(
-                    'assets/images/home/banner2.png',
-                    fit: BoxFit.cover,
-                    width: double.infinity,
-                    height: double.infinity,
-                  ),
-
-                  Positioned(
-                    top: 0,
-                    left: 25,
-
-                    child: Container(
-                      height: 20,
-                      width: 200,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(8.0),
-                          bottomRight: Radius.circular(8.0),
-                        ),
-                      ),
-                      child: Center(
-                        child: const Text(
-                          "Avail exclusive perks",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                            fontFamily: "Poppins",
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  const Positioned(
-                    top: 84,
-                    left: 25,
-                    child: Text(
-                      'Signup as a rider',
-                      style: TextStyle(
-                        color: Colors.amber,
-                        fontSize: 20,
-                        fontWeight: FontWeight.normal,
-                        fontFamily: "Poppins",
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 29,
-                    bottom: 60,
-                    child: const Text(
-                      'Ride with us',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Poppins",
-                      ),
-                    ),
-                  ),
-
-                  Positioned(
-                    bottom: 10,
-                    left: 25,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.amber,
-                        foregroundColor: Colors.white,
-                      ),
-                      child: const Text('Get Started'),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 25),
-            Text(
-              "Know more about us!",
-              style: TextStyle(
-                fontFamily: 'Poppins',
-                fontWeight: FontWeight.bold,
-                fontSize: 30,
-              ),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.only(
-                  top: 15,
-                  bottom: 15,
-                  left: 30,
-                  right: 30,
-                ),
-                backgroundColor: Colors.amber,
-                foregroundColor: const Color.fromARGB(255, 14, 13, 13),
-              ),
-              child: const Text(
-                'How does Order.UK work?  ',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-            ),
-            SizedBox(height: 15),
-            Center(
-              child: const Text(
-                'What payment methods are accepted?',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-            ),
-            SizedBox(height: 15),
-            const Center(
-              child: Text(
-                'Can I track my order in real-time?',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-            ),
-
-            SizedBox(height: 15),
-            Center(
-              child: const Text(
-                'Are there any special discounts or promotions available?',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-            ),
-            SizedBox(height: 15),
-            Center(
-              child: const Text(
-                'Is Order.UK available in my area?',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-            ),
-            SizedBox(height: 15),
-
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: const Color.fromARGB(179, 109, 106, 106),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  children: [
-                    SizedBox(height: 30),
-                    Container(
-                      width: size.width * 0.5,
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(200, 224, 221, 221),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 20),
-                          Text(
-                            "Place an Order!",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),
-                          ),
-                          SizedBox(height: 15),
-                          Image(
-                            image: AssetImage('assets/images/home/dish.png'),
-                          ),
-                          Text(
-                            'Place order through ourwebsite or Mobile app',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 20),
-                          ),
-                          SizedBox(height: 20),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 20),
-                    Container(
-                      width: size.width * 0.5,
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(200, 224, 221, 221),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 20),
-                          Text(
-                            "Track Progress",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),
-                          ),
-                          SizedBox(height: 15),
-                          Image(
-                            image: AssetImage('assets/images/home/food.png'),
-                          ),
-                          Text(
-                            'Your can track your orderstatus with delivery time',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 20),
-                          ),
-                          SizedBox(height: 20),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 20),
-                    Container(
-                      width: size.width * 0.5,
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(200, 224, 221, 221),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(height: 20),
-                          Text(
-                            "Get your Order!",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),
-                          ),
-                          SizedBox(height: 15),
-                          Image(
-                            image: AssetImage('assets/images/home/order.png'),
-                          ),
-                          Text(
-                            'Receive your order at alighting fast speed!',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 20),
-                          ),
-                          SizedBox(height: 20),
-                        ],
-                      ),
-                    ),
-                    SizedBox(height: 20),
-                    SizedBox(
-                      width: size.width * 0.8,
-                      child: Text(
-                        "Order.UK simplifies the food ordering process. Browse through our diverse menu, select your favorite dishes, and proceed to checkout. Your delicious meal will be on its way to your doorstep in no time!",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white, fontSize: 15),
-                      ),
-                    ),
-                    SizedBox(height: 30),
-                  ],
-                ),
-              ),
-            ),
-
-            SizedBox(height: 20),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: Color(Colors.amber.value),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Column(
-                  children: [
-                    SizedBox(height: 30),
-                    Text(
-                      "546+",
-                      style: TextStyle(
-                        fontSize: 100,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Text(
-                      "Registered Riders",
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(height: 20),
-                    Divider(
-                      color: Colors.white,
-                      thickness: 2,
-                      indent: 60,
-                      endIndent: 60,
-                    ),
-                    Text(
-                      "789,900+",
-                      style: TextStyle(
-                        fontSize: 100,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Text(
-                      "Orders Delivered",
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(height: 20),
-                    Divider(
-                      color: Colors.white,
-                      thickness: 2,
-                      indent: 60,
-                      endIndent: 60,
-                    ),
-                    Text(
-                      "690+",
-                      style: TextStyle(
-                        fontSize: 100,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Text(
-                      "Restaurants Partnered",
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    SizedBox(height: 20),
-                    Divider(
-                      color: Colors.white,
-                      thickness: 2,
-                      indent: 60,
-                      endIndent: 60,
-                    ),
-                    Text(
-                      "17,457+",
-                      style: TextStyle(
-                        fontSize: 100,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Text(
-                      "Food items",
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.normal,
-                        color: Colors.white,
-                      ),
-                    ),
-
-                    SizedBox(height: 30),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
             Container(
               decoration: BoxDecoration(
                 color: const Color.fromARGB(179, 228, 226, 226),
